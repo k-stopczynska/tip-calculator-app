@@ -1,0 +1,68 @@
+@use "utilities" as *;
+
+body {
+  font-family: $font-family;
+}
+
+label {
+  font-size: $font-labels-size;
+  color: $dark-grayish-cyan;
+}
+
+input {
+  font-size: $font-inputs-size;
+  color: $very-dark-cyan;
+  font-family: $font-family;
+}
+
+.tip-input-button {
+  font-size: $font-inputs-size;
+  font-family: $font-family;
+  color: $white;
+}
+
+.tip-input-button:hover {
+  color: $very-dark-cyan;
+}
+
+#tip-input::placeholder {
+  color: $dark-grayish-cyan;
+  @include md {
+    font-size: 1rem;
+  }
+
+  @include xl {
+    font-size: 1.4rem;
+  }
+}
+
+.tip-output,
+.total-output {
+  color: $white;
+  font-size: $font-labels-size;
+}
+
+span {
+  color: $dark-grayish-cyan;
+}
+
+.output {
+  color: $strong-cyan;
+  font-size: $font-inputs-size;
+
+  @include md {
+    font-size: 2.5rem;
+  }
+}
+
+.reset-button {
+  text-transform: uppercase;
+  font-size: $font-reset-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-button.active {
+  color: hsla(172, 67%, 22%);
+}

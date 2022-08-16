@@ -1,0 +1,139 @@
+/*FONTS*/
+/*COLORS*/
+/*BORDERS*/
+/*BREAKPOINTS*/
+/*MIXINS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: hsl(185deg, 41%, 84%);
+}
+@media (min-width: 720px) {
+  body {
+    justify-content: center;
+  }
+}
+
+header {
+  margin: 3rem auto;
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
+}
+@media (min-width: 960px) {
+  header {
+    margin: 5em auto;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 15px;
+}
+
+.container {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 100%;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  padding: 1.5em;
+}
+@media (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    gap: 1em;
+    min-height: 30vh;
+    max-width: 90vw;
+  }
+}
+@media (min-width: 960px) {
+  .container {
+    max-width: 80vw;
+    max-height: 55vh;
+    gap: 2em;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .user-input-container {
+    width: 50%;
+    padding: 1em;
+  }
+}
+
+.bill-input-wrapper,
+.tip-input-wrapper,
+.people-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.5em;
+}
+
+@media (min-width: 720px) {
+  .people-input-wrapper {
+    padding-bottom: 0.5em;
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+
+.output-container {
+  background-color: hsl(183deg, 100%, 15%);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5em;
+  border-radius: 13px;
+}
+@media (min-width: 720px) {
+  .output-container {
+    width: 50%;
+    padding: 2.5em;
+    justify-content: space-between;
+  }
+}
+
+.tip-output-wrapper,
+.total-output-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .tip-output-wrapper {
+    margin: 2em auto;
+  }
+}
+
+.total-output,
+.tip-output {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=base.css.map */

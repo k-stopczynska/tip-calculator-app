@@ -1,0 +1,77 @@
+/*FONTS*/
+/*COLORS*/
+/*BORDERS*/
+/*BREAKPOINTS*/
+/*MIXINS*/
+body {
+  font-family: "Space Mono", monospace;
+}
+
+label {
+  font-size: 12px;
+  color: hsl(186deg, 14%, 43%);
+}
+
+input {
+  font-size: 24px;
+  color: hsl(183deg, 100%, 15%);
+  font-family: "Space Mono", monospace;
+}
+
+.tip-input-button {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.tip-input-button:hover {
+  color: hsl(183deg, 100%, 15%);
+}
+
+#tip-input::placeholder {
+  color: hsl(186deg, 14%, 43%);
+}
+@media (min-width: 720px) {
+  #tip-input::placeholder {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  #tip-input::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+.tip-output,
+.total-output {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 12px;
+}
+
+span {
+  color: hsl(186deg, 14%, 43%);
+}
+
+.output {
+  color: hsl(172deg, 67%, 45%);
+  font-size: 24px;
+}
+@media (min-width: 720px) {
+  .output {
+    font-size: 2.5rem;
+  }
+}
+
+.reset-button {
+  text-transform: uppercase;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset-button.active {
+  color: hsl(172deg, 67%, 22%);
+}
+
+/*# sourceMappingURL=typography.css.map */
